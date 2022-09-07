@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title> Jogo da memória </title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="icon" href="img/star.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="menu">
+            <div id="butao-play" onclick="play()">
+                <div id="butao-texto">
+                    Jogar
+                </div>
+            </div>
+            <div id="pontos">
+                <span id="nick">player</span>:<span id="score">0</span>
+            </div>
+        </div>  
+
+        <div class="container" id="main">
+            <div class="row">
+                <div class="timer">
+                    <span id="segundos">00</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="bloco">
+                    <img src="img/costas.png" id="carta1" alt="Carta" onclick="vira(1, this)">
+                </div>
+                <div class="bloco">
+                    <img src="img/costas.png" id="carta2" alt="Carta" onclick="vira(2, this)">
+                </div>
+                <div class="bloco">
+                    <img src="img/costas.png" id="carta3" alt="Carta" onclick="vira(3, this)">
+                </div>
+            </div>
+            <div class="row">
+                <div class="bloco">
+                    <img src="img/costas.png" id="carta4" alt="Carta" onclick="vira(4, this)">
+                </div>
+                <div class="bloco">
+                    <img src="img/costas.png" id="carta5" alt="Carta" onclick="vira(5, this)">
+                </div>
+                <div class="bloco">
+                    <img src="img/costas.png" id="carta6" alt="Carta" onclick="vira(6, this)">
+                </div>
+            </div>
+        </div>
+
+        <script src="js/jogo.js"></script>
+    </body>
+</html>
